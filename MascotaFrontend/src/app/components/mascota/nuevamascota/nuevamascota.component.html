@@ -1,0 +1,38 @@
+<form  >
+    <div class="bd-example">
+        <div class="form-floating mb-3">
+            <input name="nombre" type="text" [(ngModel)]="item.nombre" class="form-control" id="nombreInput" placeholder="Nombre">
+            <label for="nombreInput">Nombre</label>
+        </div>
+        <div class="form-floating mb-3">
+            <input name="especie" type="text" [(ngModel)]="item.especie" class="form-control" id="especieInput" placeholder="Especie">
+            <label for="especieInput">Especie</label>
+        </div>
+        <div class="form-floating mb-3">
+            <input name="raza" type="text" [(ngModel)]="item.raza" class="form-control" id="razaInput" placeholder="Raza">
+            <label for="razaInput">Raza</label>
+        </div>
+        <div class="form-floating mb-3">
+            <input name="sexo" type="text" [(ngModel)]="item.sexo" class="form-control" id="sexoInput" placeholder="Sexo">
+            <label for="sexoInput">Sexo</label>
+        </div>
+        <div class="form-floating mb-3">
+            <input name="color" type="text" [(ngModel)]="item.color" class="form-control" id="colorInput" placeholder="Color">
+            <label for="colorInput">Color</label>
+        </div>
+        <div class="form-floating mb-3">
+            <input name="foto" type="text" [(ngModel)]="item.foto" class="form-control" id="fotoInput" placeholder="FotO">
+            <label for="fotoInput">Foto</label>
+        </div>
+        
+    </div>
+    <button type="button" (click)="salir()" class="btn btn-warning">Cancelar</button>
+    <button type="button" (click)="enviar()" class="btn btn-success">Guardar</button>
+
+</form>
+nombre?:String;
+especie?:String;
+raza?:String;
+sexo?:String;
+color?:String;
+foto?:String;
